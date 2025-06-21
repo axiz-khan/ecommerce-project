@@ -1,0 +1,142 @@
+/* Footer Container */
+.footer {
+    width: 100%;
+    background: linear-gradient(to right, #0B3D2E, #1A4A3D);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #F2E1C1; /* Light cream for text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #C2A878; /* Luxurious top border */
+  }
+  
+  /* Information Section */
+  .information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Footer Sections */
+  .About, .Cat, .Info, .Contact {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: start;
+    color: #F2E1C1;
+  }
+  
+  .Aboutsec-div {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #C5C2B6;
+  }
+  
+  /* Category and Information Links */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li a {
+    font-size: 1rem;
+    color: #F2E1C1;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effects on Links */
+  li a:hover {
+    color: #A7B69A;
+    text-decoration: underline;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Icon Style */
+  .iconStyle {
+    font-size: 2.5rem;
+    color: #F2E1C1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for social icons */
+  .iconStyle:hover {
+    transform: scale(1.2);
+    color: #A7B69A;
+  }
+  
+  /* Copyright Section */
+  .copy {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    font-size: 0.9rem;
+    color: #0B3D2E;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    letter-spacing: 1px;
+    border-top: 2px solid #C2A878;
+    padding: 1rem;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .information {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .About, .Cat, .Info, .Contact {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Extra Small Devices (Mobile) */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 2rem 1rem;
+    }
+  
+    .information {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .About, .Cat, .Info, .Contact {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .copy {
+      font-size: 0.8rem;
+    }
+  
+    .Aboutsec-div {
+      padding-right: 20px;
+    }
+  }
+  

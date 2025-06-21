@@ -1,0 +1,97 @@
+.card-box {
+    height: 26rem;
+    width: 18rem;
+    background: linear-gradient(145deg, #bfcdb3, #a0af95);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-box {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  .link-box {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2e2e2e;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .link-box a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .link-box a:hover {
+    color: #6c8542;
+  }
+  
+  .price-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  .actual-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  .discount-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4e5b3f;
+  }
+  
+  .button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .button-box button {
+    background-color: #6c8542;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-box button:hover {
+    background-color: #546937;
+  }
+  

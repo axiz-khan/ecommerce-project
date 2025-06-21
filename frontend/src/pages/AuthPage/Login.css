@@ -1,0 +1,167 @@
+/* Overall Page Style */
+.main-login {
+   height: 100vh;
+   width: 100%;
+   background-color: #F4F1E1; /* Soft cream background */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+}
+
+/* Login Box */
+.login-box {
+   background-color: #ffffff;
+   height: 70%;
+   width: 380px; /* Fixed width for a more structured look */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 15px;
+   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+   padding: 20px;
+}
+
+/* Header Styling */
+.login-header {
+   color: #0B3D2E;
+   font-size: 2rem;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-div {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 15px;
+}
+
+input {
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+   border-radius: 25px;
+   border: 1px solid #C2A878; /* Goldish border */
+   background-color: #F4F1E1;
+   font-size: 16px;
+   color: #0B3D2E;
+   outline: none;
+   transition: all 0.3s ease;
+}
+
+input::placeholder {
+   color: #A7B69A;
+}
+
+input:focus {
+   border-color: #C2A878;
+   background-color: #e9e7d3; /* Lighter color on focus */
+}
+
+/* Remember Me Section */
+.remember-div {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   margin-top: 10px;
+   font-size: 14px;
+   color: #0B3D2E;
+}
+
+#remember-check {
+   height: 18px;
+   width: 18px;
+   margin-right: 8px;
+   accent-color: #0B3D2E;
+}
+.login-nav{
+   height: 6rem;
+   width: 100%;
+   top: -8.5%;
+   position: relative;
+}
+
+/* Login Button */
+.logbtn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.login-button {
+   width: 100%;
+   height: 45px;
+   background-color: #C2A878;
+   color: #0B3D2E;
+   border: none;
+   border-radius: 25px;
+   font-size: 16px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.login-button:hover {
+   background-color: #0B3D2E;
+   color: #C2A878;
+}
+
+.forget-pass-div {
+   align-self: flex-end;
+   margin-top: 10px;
+}
+
+.forget-pass-div a {
+   text-decoration: none;
+   font-size: 14px;
+   color: #C2A878;
+}
+
+.forget-pass-div a:hover {
+   color: #0B3D2E;
+}
+
+/* Account Creation Link */
+.account-need {
+   color: #0B3D2E;
+   font-size: 14px;
+   margin-top: 15px;
+}
+
+.account-need a {
+   color: #C2A878;
+   text-decoration: none;
+}
+
+.account-need a:hover {
+   color: #0B3D2E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .login-box {
+      width: 90%;
+   }
+   .input-div {
+      width: 90%;
+   }
+}
+
+@media (max-width: 480px) {
+   .login-box {
+      width: 100%;
+   }
+   .input-div {
+      width: 100%;
+   }
+}

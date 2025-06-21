@@ -1,0 +1,95 @@
+.main-card-container {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    overflow-x: hidden; /* ✅ Prevents horizontal overflow */
+  }
+  
+  .section-header {
+    margin-bottom: 1rem;
+  }
+  
+  .category-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2f4032;
+    border-left: 6px solid #BFA980;
+    padding-left: 1rem;
+    font-family: 'Georgia', serif;
+  }
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden; /* ✅ Ensures buttons don't cause scroll */
+    box-sizing: border-box;
+  }
+  
+  .cards-track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .cards-track::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card-wrapper {
+    flex: 0 0 auto;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom right, #D6C6A8, #BFA980);
+    border: none;
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .nav-button.left {
+    left: 0.2rem; /* ✅ Move buttons inside the safe zone */
+  }
+  
+  .nav-button.right {
+    right: 0.2rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .category-title {
+      font-size: 1.6rem;
+    }
+  
+    .nav-button {
+      display: none;
+    }
+  
+    .main-card-container {
+      padding: 0 1rem;
+    }
+  
+    .cards-track {
+      gap: 0.75rem;
+    }
+  }
+  

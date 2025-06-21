@@ -1,0 +1,14 @@
+.Navbar{
+    z-index: 10;
+    position: sticky ;
+    top: 0%;
+    width:100%;
+}
+.Banner{
+    z-index: 1;
+    position: relative;
+}
+.NoticeBar{
+    z-index: 10;
+    width: 100%;
+}

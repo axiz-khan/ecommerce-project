@@ -1,0 +1,51 @@
+.allproduct-page {
+    background-color: #EFE9DC; /* warmer than home */
+    font-family: 'Poppins', sans-serif;
+}
+
+.allproduct-header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.allproduct-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #3B3A36;
+}
+
+.allproduct-header p {
+    font-size: 1.1rem;
+    color: #7A7A7A;
+    margin-top: 10px;
+}
+
+.allproduct-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+}
+
+.allproduct-category-section {
+    background-color: #FDFBF6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E2D5C3;
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4A3F35;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Optional: make cards inside CardContainer match the theme */
+.cardcont-container {
+    background-color: transparent;
+}

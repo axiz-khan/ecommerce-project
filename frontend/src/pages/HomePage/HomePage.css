@@ -1,0 +1,132 @@
+/* Home Page Background */
+.home-page {
+    background-color: #F4F1E1; /* Soft cream for comfort */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.main-navbar {
+    width: 100%;
+    background-color: #0B3D2E; /* Deep Green */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner */
+.banner-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Categories Section */
+.categories-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Styling for Each Card Section */
+.cardcont-container {
+    width: 85%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 10px;
+}
+
+/* Card Container Styling */
+.cardcont-container .category-card {
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardcont-container .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardcont-container .category-card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.cardcont-container .category-card .card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cardcont-container .category-card .card-content h3 {
+    font-size: 1.5rem;
+    color: #0B3D2E;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cardcont-container .category-card .card-content p {
+    font-size: 1rem;
+    color: #A7B69A;
+}
+
+/* Card Container Hover Effect */
+.cardcont-container .category-card:hover .card-content h3 {
+    color: #C2A878; /* Elegant gold for hover */
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #0B3D2E;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer a {
+    color: #C2A878; /* Luxurious gold for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F4F1E1;
+}
+
+/* Notice Bar */
+.notice-bar {
+    background-color: #C2A878; /* Soft, muted gold */
+    color: #0B3D2E; /* Deep green for contrast */
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .cardcont-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .cardcont-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page {
+        padding: 0 10px;
+    }
+}

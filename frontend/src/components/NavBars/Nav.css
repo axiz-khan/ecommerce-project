@@ -1,0 +1,264 @@
+/* Base Styles */
+.navbar-container {
+    flex: 1;
+    width: 100%;
+    height: 6rem; /* Fixed height */
+    min-height: 6rem; /* Ensure it doesn't shrink below this value */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    transition: background-color 0.5s ease-in-out;
+    position: sticky;
+    top: 0;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    z-index: 1000;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.nav-logo {
+    height: 80px;
+    object-fit: contain;
+  }
+  
+/* Scrolled state */
+.navbar-scrolled {
+    background-color: #0B3D2E; /* Dark green for luxurious vibe */
+}
+
+/* Hover effect on navbar */
+.navbar-container:hover {
+    background-color: #1A5A43; /* Slightly lighter dark green for hover effect */
+}
+
+/* Navbar Items */
+.link-container a {
+    color: #F4F4F4; /* Light color for text */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on links */
+.link-container a:hover {
+    color: #C2A878; /* Elegant gold hover effect */
+}
+
+/* Container for logo and links */
+.link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    flex: 1;
+}
+
+.srcbtn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+}
+
+.inp-comp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #F4F4F4; /* Elegant light background */
+    padding: 0.5rem 1rem;
+}
+
+.inp-comp input {
+    background-color: transparent;
+    border: none;
+    width: 18rem;
+    height: 2.5rem;
+    color: #0B3D2E;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inp-comp button {
+    background-color: transparent;
+    color: #C2A878;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for search button */
+.inp-comp button:hover {
+    color: #F4F4F4;
+}
+
+/* Account and Cart buttons */
+.acc-btn button, .shp-btn button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.acc-btn button:hover, .shp-btn button:hover {
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo-container {
+    margin-right: 2rem; /* Added margin to create space between the logo and search bar */
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: absolute;
+    top: 5.5rem;
+    right: 3rem;
+    background-color: #0B3D2E;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-btn {
+    background-color: #C2A878;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #F4F4F4;
+    color: #0B3D2E;
+    transform: translateX(5px); /* Subtle movement on hover */
+}
+
+/* Prevent Horizontal Scroll */
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Responsive Design */
+@media (max-width: 1140px) {
+    .logo-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .srcbtn-container {
+        width: 18rem;
+    }
+    .link-container {
+        width: 12rem;
+    }
+    .inp-comp input {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .inp-comp input {
+        display: none;
+    }
+
+    .inp-comp button {
+        background: none;
+        color: #C2A878;
+    }
+
+    .srcbtn-container {
+        width: 8rem;
+    }
+
+    .logo-container {
+        margin: 0;
+    }
+
+    .menu-button {
+        background: none;
+        outline: none;
+        border: 0;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+    .navbar-container {
+        padding: 0 1.5rem;
+    
+        height: auto;
+        gap: 1rem;
+    }
+
+    .link-container {
+        flex: 1 1 100%;
+        justify-content: center;
+        
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .link-container a {
+        font-size: 1rem;
+    }
+
+    .logo-container {
+        flex: 0 0 auto;
+        justify-content: center;
+        margin: 0 auto 1rem auto;
+    }
+
+    .nav-logo {
+        height: 60px;
+    }
+
+    .srcbtn-container {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .inp-comp input {
+        width: 10rem;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 767px) {
+    .link-container a {
+        font-size: 0.8rem;
+    }
+}

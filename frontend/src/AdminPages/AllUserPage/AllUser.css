@@ -1,0 +1,172 @@
+/* Overall Container for Admin Page */
+.admin-users-container {
+    display: flex;
+    background-color: #fefcf9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+}
+
+/* Admin Main Content */
+.admin-users-main {
+    padding: 40px;
+    width: 100%;
+}
+
+.admin-users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-users-header h1 {
+    font-size: 2.5rem;
+    color: #2E3A59;
+}
+
+/* Analytics Section for Cards */
+.analytics-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.analytic-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.analytic-card:hover {
+    transform: translateY(-4px);
+}
+
+.analytic-card p {
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.analytic-card h2 {
+    font-size: 2rem;
+    color: #2E3A59;
+    margin: 0;
+}
+
+.total {
+    border-left: 6px solid #c2a878;
+}
+
+.in-stock {
+    border-left: 6px solid #114B3C;
+}
+
+.out-stock {
+    border-left: 6px solid #B85C38;
+}
+
+/* Users List Section */
+.users-list-section {
+    margin-top: 20px;
+}
+
+.users-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Each User Row Card */
+.users-list > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 780px) {
+    /* Mobile View */
+    .admin-users-container {
+        flex-direction: column;
+    }
+
+    .admin-users-main {
+        padding: 20px;
+    }
+
+    .admin-users-header h1 {
+        font-size: 2rem;
+    }
+
+    /* Adjust Analytics Cards for Mobile */
+    .analytics-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .analytic-card {
+        flex: 1;
+        padding: 16px;
+    }
+
+    .analytic-card h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Users List Layout for Mobile */
+    .users-list {
+        display: block;
+    }
+
+    .users-section-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Tablet View */
+    .admin-users-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .analytics-section {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .analytic-card {
+        flex: 1;
+        padding: 20px;
+    }
+}
+
+/* Desktop View Adjustments */
+@media (min-width: 1025px) {
+    .admin-users-container {
+        flex-direction: row;
+    }
+
+    .admin-users-main {
+        margin-left: 250px;
+        padding: 40px;
+        width: calc(100% - 250px);
+    }
+
+    .users-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

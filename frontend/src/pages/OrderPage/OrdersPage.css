@@ -1,0 +1,119 @@
+.order-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F4ED; /* Creamy Beige */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.order-title {
+  font-size: 2.5rem;
+  color: #2E3D30; /* Elegant deep green */
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.order-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7B7B7B;
+  margin-bottom: 40px;
+}
+
+.no-orders {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #3A3A3A;
+  margin-top: 40px;
+}
+
+.order-card {
+  background: linear-gradient(145deg, #E9E1D0, #F3EEE4); /* Subtle gradient */
+  border: 1px solid #D8C9B6;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(67, 78, 59, 0.1);
+  padding: 25px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(67, 78, 59, 0.2);
+  border-color: #C2A878; /* Gold Accent */
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #D2C2AA;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.order-header h2 {
+  font-size: 1.2rem;
+  color: #2E3D30;
+  margin: 0;
+}
+
+.order-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.order-status {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  background-color: #E4DFD0;
+}
+
+.order-status.delivered {
+  background-color: #D8F1E2;
+  color: #2B6C57;
+}
+
+.order-status.canceled {
+  background-color: #FBE9D6;
+  color: #B56E1D;
+}
+
+.order-details p,
+.order-item p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #4B4B4B;
+}
+
+.order-items {
+  margin-top: 20px;
+}
+
+.order-items h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #3C3C3C;
+  border-bottom: 1px solid #D2C2AA;
+  padding-bottom: 5px;
+}
+
+.order-item {
+  padding: 10px 0;
+  border-top: 1px dashed #D2C2AA;
+}
+
+.order-item:first-child {
+  border-top: none;
+}

@@ -1,0 +1,235 @@
+.admin-home-container {
+  display: flex;
+  background-color: #f9f8f6;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-home-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.admin-home-content {
+  margin-left: 11.1%;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+
+.admin-home-heading {
+  font-size: 2.2rem;
+  color: #0B3D2E;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.admin-banner-section,
+.category-section,
+.category-dropdowns {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.admin-banner-section h3,
+.category-section h3 {
+  color: #1e1e1e;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+input[type='file'] {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.banner-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  margin-top: 1rem;
+  padding-bottom: 10px;
+}
+
+.banner-item {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.banner-item:hover {
+  transform: scale(1.03);
+}
+
+.banner-item img {
+  width: 220px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.banner-item button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.banner-item button:hover {
+  background-color: rgba(185, 28, 28, 0.9);
+}
+
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 1rem;
+}
+
+.item-card {
+  width: 180px;
+  background-color: #fefefe;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.item-card:hover {
+  transform: translateY(-3px);
+}
+
+.item-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-card p {
+  margin: 0.4rem 0;
+  color: #2f2f2f;
+  font-size: 0.95rem;
+}
+
+.category-dropdowns {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.admin-home-submit {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: #0B3D2E;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-home-submit:hover {
+  background-color: #094430;
+}
+.preview-image {
+  margin-top: 1rem;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.custom-file-input-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent; /* Remove div color */
+  border: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #45a049;
+}
+
+.hidden-file-input {
+  display: none; /* This will hide the file input */
+}
+
+.custom-file-input-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent; /* Remove div color */
+  border: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #45a049;
+}
+@media (max-width: 780px) {
+  .admin-home-container {
+    flex-direction: column;
+  }
+
+  .admin-home-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .admin-home-content {
+    margin-left: 0 !important;
+    margin-top: 4rem; /* height of mobile nav */
+    padding: 1rem;
+  }
+
+  .admin-home-content.mobile {
+    padding: 1rem;
+  }
+}

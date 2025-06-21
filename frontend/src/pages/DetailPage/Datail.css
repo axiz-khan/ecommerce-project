@@ -1,0 +1,256 @@
+.Detail-container {
+    width: 100%;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #F5F1E8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 2rem;
+}
+
+.pro-image-div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.pro-image-div::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* makes it square (optional) */
+}
+
+.pro-image-div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.detail-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.detail-info-head {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0B3D2E;
+    margin-bottom: 1rem;
+}
+
+.detail-info-rateprice {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qty-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .qty-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .qty-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    min-width: 2rem;
+    text-align: center;
+  }
+  
+.detail-info-option {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-info-quantity {
+    height: 2rem;
+    width: 6rem;
+    border: 1px solid #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.detail-info-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.detail-info-button button {
+    background-color: #0B3D2E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detail-info-button button:hover {
+    background-color: #145943;
+}
+
+.detail-discription {
+    width: 100%;
+    background-color: #F5F0E6;
+    margin-top: 4rem;
+    border: 2px solid #C2A878;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 🔽 Comment Section Styling */
+.comment-section {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.comment-section h3 {
+    font-size: 1.5rem;
+    color: #0B3D2E;
+    margin-bottom: 1rem;
+}
+
+.comment-box {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 6rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 0.5rem;
+    background-color: #F5F1E8;
+    color: #333;
+}
+
+.comment-box button {
+    align-self: flex-end;
+    background-color: #C2A878;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-box button:hover {
+    background-color: #a88f66;
+}
+
+.comment-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.comment-item {
+    background-color: #F5F1E8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #0B3D2E;
+}
+
+.comment-item span {
+    font-weight: bold;
+    color: #0B3D2E;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* 🔽 Responsive Layout */
+@media (max-width: 800px) {
+    .Detail-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .pro-image-div, .detail-info {
+        width: 100%;
+    }
+
+    .detail-info {
+        padding-right: 0;
+    }
+
+    .detail-discription,
+    .comment-section {
+        width: 95%;
+        margin: 2rem auto 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Detail-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .pro-image-div {
+        width: 100%;
+        height: 300px;
+    }
+
+    .detail-info {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+

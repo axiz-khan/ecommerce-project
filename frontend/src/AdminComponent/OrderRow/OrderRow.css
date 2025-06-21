@@ -1,0 +1,102 @@
+.orderrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 15px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.orderrow-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.orderrow-container > div {
+  width: 14%;
+  text-align: center;
+  color: #2E3A59;
+  word-break: break-word;
+}
+
+.orderrow-action .action-btn {
+  background-color: #E3E8F0;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.orderrow-action .action-btn:hover {
+  background-color: #d0d6df;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .orderrow-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px;
+  }
+
+  .orderrow-container > div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .orderrow-id::before {
+      content: "Order ID:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-user::before {
+      content: "User:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-add::before {
+      content: "Address:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-date::before {
+      content: "Date:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-price::before {
+      content: "Price:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-status::before {
+      content: "Status:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-action::before {
+      content: "Action:";
+      font-weight: 600;
+      color: #555;
+  }
+
+  .orderrow-container span {
+      flex: 1;
+      text-align: right;
+      color: #2E3A59;
+  }
+}

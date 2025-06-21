@@ -1,0 +1,120 @@
+.allprorow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin: 0.7rem 0;
+  flex-wrap: wrap;
+}
+
+.allprorow-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2b3a30;
+}
+
+.product-price {
+  color: #c2a878;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.product-stock {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4caf50;
+}
+
+.out-of-stock .product-stock {
+  color: #d72638;
+}
+
+.out-of-stock {
+  background-color: #fff3f3;
+  border: 1px solid #f2dede;
+}
+
+.in-stock {
+  border: 1px solid #e0e0e0;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+.action-btn {
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn.info svg { color: #c2a878; }
+.action-btn.edit svg { color: #5f89f9; }
+.action-btn.delete svg { color: #d72638; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .allprorow-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 12px;
+  }
+
+  .product-image {
+      margin: 0 auto;
+  }
+
+  .product-info {
+      width: 100%;
+      text-align: center;
+  }
+
+  .product-actions {
+      justify-content: center;
+      margin: 0 auto;
+      flex-wrap: wrap;
+  }
+}

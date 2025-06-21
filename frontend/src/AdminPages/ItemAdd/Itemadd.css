@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .itemadd-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f4f9;
+    margin-top: 50px;
+  }
+  
+  .menu-box {
+    position: fixed;
+    width: 20%;
+    z-index: 999;
+  }
+  
+  .form-box {
+    margin-left: 22%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 55%;
+    max-width: 1200px;
+  }
+  
+  h4.form-section-title {
+    font-size: 1.25rem;
+    color: #3e3e3e;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .form-section input, .form-section textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .form-section input:focus, .form-section textarea:focus {
+    border-color: #a27b5c;
+    background-color: #fff;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .btn-submit, .btn-cancel {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit {
+    background-color: #8c5c36;
+    color: white;
+  }
+  
+  .btn-submit:hover {
+    background-color: #734531;
+  }
+  
+  .btn-cancel {
+    background-color: #d5a5a1;
+    color: white;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #b87e7a;
+  }
+  /* Existing styles remain unchanged above this */
+
+@media screen and (max-width: 780px) {
+  .itemadd-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .form-box {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-submit, .btn-cancel {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .form-section-title {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,91 @@
+.about-page {
+    background-color: #f4f1e1;
+    font-family: 'Poppins', sans-serif;
+    color: #0b3d2e;
+    overflow-x: hidden;
+  }
+  
+  .main-navbar {
+    width: 100%;
+    background-color: #0b3d2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background-color: #c2a878;
+    color: white;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero-section p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+  }
+  
+  .image-text-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .image-text-section img {
+    width: 40%;
+    min-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-text-section .text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .image-text-section .text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0b3d2e;
+  }
+  
+  .image-text-section .text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4d4d4d;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.2rem;
+    }
+  
+    .image-text-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .image-text-section.reverse {
+      flex-direction: column;
+    }
+  
+    .image-text-section img {
+      width: 100%;
+    }
+  }
+  

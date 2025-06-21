@@ -1,0 +1,40 @@
+
+ #divider{
+    color: gray;
+ }
+ /* #main{
+    border: 2px dotted dodgerblue;
+ } */
+ #box2{
+    border: 2px solid red;
+    height: 3rem;
+ }
+
+ #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+ }
+ #creat{
+    background:greenyellow;
+    color: blue   ;
+ }
+ #have{
+    background:greenyellow;
+    color: blue   ;
+ }
+ #google{
+    background: black;
+    color: white    ;
+ }
+ #apple{
+    background-color: black;
+    color: white;
+ }
+ #logo{
+    padding-bottom: 2rem;
+ }

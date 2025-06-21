@@ -1,0 +1,25 @@
+#main{
+    height: 3rem;
+    width: full;
+   
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    justify-content: space-between  ;
+    width: 35rem;
+    
+    
+}
+#button{
+    color: black;
+   
+}
+.css{
+    color:black;
+}
+#main-main{
+    width: full;
+}
+.select{
+    color: greenyellow;
+}
