@@ -85,7 +85,7 @@
                     <div>
                         <Link to="/">
                             <img
-                                src="logo.png"
+                                src="/logo.png"
                                 alt="EverWood Logo"
                                 className="nav-logo"
                             />
